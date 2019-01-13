@@ -1,4 +1,4 @@
-(ns functional-programming.polygon_perimeter
+(ns functional-programming.polygon-perimeter
   (:require [clojure.string :as str]))
 
 (def number (Integer/parseInt (read-line)))

@@ -1,7 +1,7 @@
 (ns functional-programming.hello-world-n-times)
 
-(defn hello_word_n_times [input]
+(defn hello-word-n-times [input]
   (dotimes [_ input] (println "Hello World")))
 
 (def n (Integer/parseInt (read-line)))
-(hello_word_n_times n)
+(hello-word-n-times n)

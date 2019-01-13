@@ -1,6 +1,6 @@
 (ns functional-programming.sum-odd-elements)
 
-(defn sum_odd_elements [lst]
-  (->> lst
-       (filter odd?)
-       (reduce + 0)))
+(defn sum-odd-elements [lst]
+  (reduce (fn [acc curr] (+ acc (if (odd? curr) curr 0)))
+          0
+          lst))
