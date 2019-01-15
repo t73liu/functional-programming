@@ -3,8 +3,5 @@
 (def first-str (clojure.string/split (read-line) #""))
 (def second-str (clojure.string/split (read-line) #""))
 
-(defn string-mingling [p q]
-  (->>  (map str p q)
-        (reduce str)))
-
-(println (string-mingling first-str second-str))
+(doall (for [p (map str first-str second-str)]
+         (print p)))
